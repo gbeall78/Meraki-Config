@@ -154,7 +154,8 @@ dmypy.json
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -244,7 +245,6 @@ Temporary Items
 [Ll]ib
 [Ll]ib64
 [Ll]ocal
-[Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
 
@@ -262,4 +262,5 @@ pip-selfcheck.json
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos,flask,python,venv
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
-
+logs/
+launch.json
