@@ -1,0 +1,49 @@
+{
+    "org" : [
+        {
+            "name" : "enforceTwoFactorAuth",
+            "value" : true
+        },
+        {
+            "name" : "enforceLoginIpRanges",
+            "value" : {
+                "enable" : true,
+                "loginIpRanges": [
+                    "192.195.83.1"
+                ]
+            }
+        }
+    ],
+    "net" : [
+        {
+            "name" : "alerts",
+            "value" : {
+                "defaultDestinations": {
+                    "emails": [ "meraki@iqpc.net.au" ],
+                    "allAdmins": true,
+                    "snmp": true
+                },
+                "alerts": [
+                    {
+                        "type": "gatewayDown",
+                        "enabled": true,
+                        "filters": { "timeout": 60 }
+                    }
+                ]
+            }
+        },
+        {
+            "name" : "intrusion",
+            "value" : {
+                "mode" : "prevention",
+                "idsRulesets" : "security"
+            }
+        },
+        {
+            "name" : "malware",
+            "value" : {
+                "mode" : "enabled"
+            }
+        }
+    ]
+}

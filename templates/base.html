@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meraki configurator</title>
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/meraki_default.css') }}">
+
+    <script type=text/javascript>
+        $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
+    </script>
+    <script type=text/javascript src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type=text/javascript src="{{ url_for('static',filename='scripts/tabs.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static',filename='scripts/updateOrg.js') }}"></script>
+</head>
+<body>
+    <div class="heading">Meraki configurator</div>
+    {% block body %}{% endblock %}
+</body>
+</html>

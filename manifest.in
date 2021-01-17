@@ -1,0 +1,6 @@
+graft Meraki-Config/static
+graft Meraki-Config/templates
+graft Meraki-Config/tests
+global-exclude *.pyc
+global-exclude *.vscode
+global-exclude logs/*

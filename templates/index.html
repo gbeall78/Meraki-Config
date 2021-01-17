@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+   
+{% block body %}
+   <div class="tab">
+        <button class="tablinks" id="defaultOpen" onclick="openPage(event, 'orgs')">Organisations</button>
+        <button class="tablinks" onclick="openPage(event, 'template')">Template</button>
+        <button class="tablinks" onclick="openPage(event, 'status')">Status</button>
+    </div>
+    <div id="orgs" class="tabcontent">
+        <h2>Managed organisations</h3>
+        {{ orgTable }}
+    </div>
+    <div id="template" class="tabcontent">
+        <h2>Configuration template</h2>
+        {{ configTemplate }}
+    </div>
+    <div id="status" class="tabcontent">
+        <h2>Organisations status</h3>
+        {{ orgStatus }}
+    </div>
+    <script>
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+{% endblock %}
