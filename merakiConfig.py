@@ -11,7 +11,7 @@ from airium import Airium
     -   https://github.com/meraki/dashboard-api-python/
     -   https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html
 
-    export MERAKI_DASHBOARD_API_KEY=73c08de50d9eb5bb8ca6b05a4cf582e3a18e9399
+    export MERAKI_DASHBOARD_API_KEY=#################################
 '''
 
 app = Flask(__name__)
