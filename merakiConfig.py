@@ -64,13 +64,13 @@ def buildTable(data):
         for i in data:
             with html.tr():
                 html.td(_t=i['name'])
-                if(isinstance(i['value']),bool)):
+                if(isinstance(i['value'],bool)):
                     with html.td():
                         if('enable'):
                             html.input(type='checkbox', checked='')
                         else:
                             html.input(type='checkbox')
-                elif(isinstance(i['value']),dict):
+                elif(isinstance(i['value'],dict)):
                     html.td()
     return str(html)
 
